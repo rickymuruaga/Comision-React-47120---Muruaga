@@ -2,10 +2,13 @@
   
   width: 60px;
   margin-left: 20px;
+  color:  #35e3ed, #2ce0eb'
 }
 
 .menu{
-  margin-top: 15px;
+ margin-top: 15px;
+ justify-content: center;
+ 
 }
 
 .widget {
@@ -13,4 +16,13 @@
   margin-right: 20px;
   margin-top: 15px;
   
+  
 }
+
+.saludo {
+
+  text-align: center;
+  margin-top: 50px;
+}
+
+

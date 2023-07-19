@@ -8,7 +8,7 @@ const App = () => {
       <Navbar/>
       <ItemListContainer 
       
-      greeting= "Bienvenidos a la Tienda oficial de la seleccion"
+      greeting= "Bienvenidos a la Tienda oficial de la seleccion Argentina"
       />
      </>
   )

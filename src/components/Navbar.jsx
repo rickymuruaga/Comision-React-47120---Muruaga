@@ -6,14 +6,15 @@ import logotienda from '../images/logotienda.webp'
 
 const Navbar = () => {
   return (
-    <Flex >
-      <Box  p='1' bg='white' color={'white'}>
+    <Flex  w='100%' h='200px' bgGradient='linear(to-l, #35e3ed, #2ce0eb)' >
+      <Box p='1'  color={'#35e3ed'}>
         <img className='logotienda' src={logotienda}/>
       </Box>
       <Spacer />
-      <Box>
+      <Box className='menu'>
+        
         <Menu>
-          <MenuButton className='menu' as={Button} rightIcon={<ChevronDownIcon />}>
+          <MenuButton  as={Button} rightIcon={<ChevronDownIcon />}>
             Categorias
           </MenuButton>
           <MenuList>
