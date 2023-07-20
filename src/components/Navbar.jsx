@@ -1,5 +1,5 @@
 import React from 'react'
-import { Menu, MenuButton, Button, MenuList, MenuItem, Box, Flex, Spacer} from '@chakra-ui/react'
+import { Menu, MenuButton, Button, MenuList, MenuItem, Box, Flex, Spacer, HamburgerIcon} from '@chakra-ui/react'
 import {  ChevronDownIcon } from '@chakra-ui/icons'
 import CartWidget from './CartWidget'
 import logotienda from '../images/logotienda.webp'
@@ -25,7 +25,7 @@ const Navbar = () => {
         </Menu>
       </Box>
       <Spacer />
-
+      
       <Box>
         <CartWidget />
       </Box>

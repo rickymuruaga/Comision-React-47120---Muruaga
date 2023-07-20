@@ -1,6 +1,6 @@
 import React from 'react'
-import { Box, Spacer } from '@chakra-ui/react'
-import { Search2Icon} from '@chakra-ui/icons'
+import { Box, } from '@chakra-ui/react'
+import { Search2Icon, } from '@chakra-ui/icons'
 
 
 const CartWidget = () => {
@@ -10,11 +10,11 @@ const CartWidget = () => {
      <Box>
      <Search2Icon/>
      </Box>
-    
+     
      <Box>
       <p>3</p>
      </Box>
-    
+
      
      </div>
   )
