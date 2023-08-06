@@ -6,9 +6,11 @@
 }
 
 .menu{
- margin-top: 15px;
- justify-content: center;
- 
+  display: flex;
+  
+  justify-content: center;
+  margin-top: 15px;
+  margin-right: 50px;
 }
 
 .widget {
@@ -22,6 +24,14 @@
 .saludo {
  text-align: center;
  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.carrito {
+  color: #35e3ed;
+  width: 60px;
+  margin-left: 20px;
+  
+
 }
 
 
