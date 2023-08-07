@@ -3,6 +3,9 @@ import {Card,CardHeader, CardBody,CardFooter, Heading, Text, Button } from '@cha
 import { Link } from 'react-router-dom'
 
 const Item = ({nombre, description, id, category}) => {
+ 
+  console.log(nombre);
+ 
   return (
     <>
     <Card>
@@ -15,13 +18,14 @@ const Item = ({nombre, description, id, category}) => {
             </CardBody>
             
             <CardFooter>
-              
+            
+            <Link to ={`/item/{'id'}`}>
               <Button>
-                <Link to={`/item/${id}`}>
-                   Details
-                </Link>
-                
+                 Details
               </Button>
+            </Link>
+                
+              
              
             </CardFooter>
           </Card>

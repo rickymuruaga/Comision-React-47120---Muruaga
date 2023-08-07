@@ -4,7 +4,8 @@ import {Card,CardHeader, CardBody,CardFooter, Heading, Text, Button, Center } fr
 
 
  const ItemDetail = ({productos}) => {
-  const {id} = useParams ();
+  const {id} = useParams ()
+  console.log(productos);
 
     const filteredProducts = productos.filter((producto) => producto.id == id) 
       
@@ -12,15 +13,15 @@ import {Card,CardHeader, CardBody,CardFooter, Heading, Text, Button, Center } fr
         <div>
            {filteredProducts.map((p) => {
            return (
-            <div key={p.id}>
+            <div>
               <Center p="1rem">
                  <Card>
                    <CardHeader>
-                     <Heading size='md'>{p.nombre}</Heading>
+                     <Heading size='md'></Heading>
                    </CardHeader>
                    <CardBody>
-                     <Text>{p.description}</Text>
-                     <Text>{p.category}</Text>
+                     <Text></Text>
+                     <Text></Text>
                    </CardBody>
 
                    <CardFooter>

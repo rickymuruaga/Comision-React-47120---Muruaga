@@ -5,10 +5,10 @@ import ItemDetail from './ItemDetail'
  const ItemDetailContainer = () => {
        
         const productos = [
-          {id: 1, nombre: "producto A", description: "camiseta titular afa", stock: 15, category: "cat1" },
-          {id: 2, nombre: "producto B", description: "camiseta suplente afa", stock: 10, category: "cat2" },
-          {id: 3, nombre: "producto C", description: "short titular afa", stock: 12, category: "cat3" },
-          {id: 4, nombre: "producto D", description: "campera afa", stock: 8, category: "cat3" },
+          {id: 1, nombre: "Camiseta Titular AFA", description: "Celeste y blanca a rayas", stock: 15, category: "cat1" },
+          {id: 2, nombre: "Camiseta Suplente AFA", description: "Violeta", stock: 10, category: "cat2" },
+          {id: 3, nombre: "Short Titular AFA", description: "Short titular AFA", stock: 12, category: "cat3" },
+          {id: 4, nombre: "Campera Afa", description: "Campera Rompevientos", stock: 8, category: "cat3" },
         ]
         
         const getProductos = new Promise((resolve, reject) => {

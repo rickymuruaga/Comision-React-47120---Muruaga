@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Cart from './components/Cart'
 import About from './components/About'
-import ItemDetail from './components/ItemDetail'
 import ProductDetail from './components/ProductDetail'
 
 
@@ -21,8 +20,7 @@ const App = () => {
 return (
     <BrowserRouter>
       <Navbar />
-      <ProductDetail/>
-      <ItemDetail/>
+      
     
      <Routes> 
        <Route exact path="/" element={<Home />} />
