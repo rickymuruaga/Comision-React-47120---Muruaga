@@ -18,12 +18,11 @@ const Item = ({nombre, description, id, category}) => {
             </CardBody>
             
             <CardFooter>
-            
-            <Link to ={`/item/{'id'}`}>
-              <Button>
-                 Details
-              </Button>
-            </Link>
+            <Button>
+              <Link to ={`/item/${id}`}>
+                    Details
+                </Link>
+            </Button>
                 
               
              

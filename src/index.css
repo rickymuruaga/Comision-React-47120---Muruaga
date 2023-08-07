@@ -34,4 +34,12 @@
 
 }
 
+.titulo {
+  text-align: center;
+  
+}
 
+.cards {
+  display: flex;
+  
+}

@@ -43,7 +43,10 @@ const Navbar = () => {
         </Menu>
       </Box>
       <Box>
-      <img className='carrito' src={carrito}/>
+        <Link to={`/Cart`}>
+          <img className='carrito' src={carrito}/>
+        </Link>
+        
       </Box>
    
     </Flex>
