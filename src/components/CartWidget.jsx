@@ -8,7 +8,7 @@ const CartWidget = () => {
     <div className='widget' >
      
      <Box>
-      
+       5
       </Box>
    
     </div>

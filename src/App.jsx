@@ -7,20 +7,20 @@ import Home from './components/Home'
 import Cart from './components/Cart'
 import About from './components/About'
 import ProductDetail from './components/ProductDetail'
-
-
-
-
-
-
+import ShoppingCartContext from "./context/ShoppingCartContext"
+import ComponenteA from "./components/ComponenteA"
 
 
 const App = () => {
 
 return (
-    <BrowserRouter>
-      <Navbar />
-      
+   <>
+     {/*  <ComponenteA/>
+      <Cart/> */}
+     
+   <BrowserRouter>
+   <ShoppingCartContext>
+       <Navbar />
     
      <Routes> 
        <Route exact path="/" element={<Home />} />
@@ -30,17 +30,16 @@ return (
        <Route exact path="/category/:category" element={<ItemListContainer/>} />
        <Route exact path="/item/:id" element={<ItemDetailContainer/>} />
      
-          
-       
-        
+      </Routes>
     
-    </Routes>
+    </ShoppingCartContext>
     
-    
-    </BrowserRouter>
-   
-  )
-}
+</BrowserRouter> 
+
+</>
+)
+    }
+
 
 export default App
 
