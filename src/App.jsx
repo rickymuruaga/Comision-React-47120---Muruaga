@@ -9,16 +9,46 @@ import About from './components/About'
 import ProductDetail from './components/ProductDetail'
 import ShoppingCartContext from "./context/ShoppingCartContext"
 import ComponenteA from "./components/ComponenteA"
+import { useState, useEffect } from 'react'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import Loading from './components/Loading'
+
 
 
 const App = () => {
+ /* const [loading, setLoading] = useState(true)
+ const [elementos, setElementos] = useState([])
+
+useEffect(() => {
+  setTimeout(() => {
+    setElementos(["Elemento A", "Elemento B", "Elemento C"])
+    setLoading(false)
+  }, 5000)
+}, [])
+
+
+if (loading){
+  return <Loading/>
+}
+ */
+
 
 return (
    <>
+    {/* 
+     <h2>Lista de elementos</h2>
+    <ul>
+      {elementos.map((e) =>
+      <li>{e}</li>
+      )}
+    </ul> */}
+    
+    
+
      {/*  <ComponenteA/>
       <Cart/> */}
      
-   <BrowserRouter>
+   {  <BrowserRouter>
    <ShoppingCartContext>
        <Navbar />
     
@@ -34,7 +64,7 @@ return (
     
     </ShoppingCartContext>
     
-</BrowserRouter> 
+</BrowserRouter> } 
 
 </>
 )
