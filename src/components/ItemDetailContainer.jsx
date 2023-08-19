@@ -1,6 +1,8 @@
 import React from 'react'
 import ItemDetail from './ItemDetail'
-
+import { useEffect, useState } from 'react'
+import { doc, getDoc, getFirestore} from 'firebase/firestore'
+ 
 
  const ItemDetailContainer = () => {
        
@@ -33,15 +35,48 @@ import ItemDetail from './ItemDetail'
         .catch((error)=>{
           console.log(error);
         }
-        )
+        ) 
       
+const Document = () => {
+  const [product, setProduct] = useState([])
+  console.log(product);
 
+ useEffect(() => {
+  const db = getFirestore()
+  const oneItem = doc(db, "indumentaria", "AIciaOdNZJzJkLPcwKqY")
+  getDoc(oneItem).then((snapshot) => {
+    if(snapshot.exists()){
+      const docs = snapshot.data()
+      setProduct(docs)
+     }
+    }, [])
+
+ })
+
+
+
+
+}
   return (
-    <>
-    <ItemDetail
+    <div>
+    {/* <ItemDetail
      productos={productos}
-     />
-    </>
+    /> */}
+    
+      <h1>Producto</h1>
+      {
+        <div>
+            <h3>producto: {product.name}</h3>
+            <h4>categoria: {product.category}</h4>
+            <p>Precio: {product.price}</p>
+        </div>
+
+      }
+    
+    
+    
+    
+    </div>
   )
 }
 

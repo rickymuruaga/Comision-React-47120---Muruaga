@@ -2,6 +2,8 @@ import React from 'react'
 import ItemList from '../components/ItemList'
 import {Center} from '@chakra-ui/react'
 import { useParams } from 'react-router-dom'
+import { useEffect, useState } from 'react'
+import { collection, getDocs, getFirestore} from 'firebase/firestore'
 
 const ItemListContainer = () => {
   const {category} = useParams()
@@ -38,14 +40,45 @@ const ItemListContainer = () => {
   )
 
   
-  const filteredProducts = productos.filter((producto) => producto.category === category)
+  const filteredProducts = productos.filter((producto) => producto.category === category) 
+
+  const collection = () => {
+    const [products, setProducts] = useState([])
+    console.log(products)
+
+    useEffect(() => {
+      const db = getFirestore()
+
+      const itemcollection = collection(db, "indumentaria")
+      getDocs(itemcollection).then((snapshot) => {
+        const docs = snapshot.docs.map((doc) => doc.data ())
+        setProducts(docs)
+      })
+    }, [])
+
+  }
   
   return (
-    <Center p="1rem">
+    /* <Center p="1rem">
        <ItemList
        productos={filteredProducts}
        />
-       </Center>
+       </Center> */
+       <div>
+         <h1>Productos</h1>
+      { 
+       products.map((product) => { 
+
+       <div key={product.name}>
+            <h3>producto: {product.name}</h3>
+            <h4>categoria: {product.category}</h4>
+            <p>Precio: {product.price}</p>
+        </div>
+
+     })
+   } 
+  </div>
+       
   )
   }
 

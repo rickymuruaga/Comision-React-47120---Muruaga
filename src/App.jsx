@@ -12,6 +12,7 @@ import ComponenteA from "./components/ComponenteA"
 import { useState, useEffect } from 'react'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import Loading from './components/Loading'
+import SendOrder from './components/SendOrder'
 
 
 
@@ -35,7 +36,10 @@ if (loading){
 
 return (
    <>
-    {/* 
+    <SendOrder />
+    {
+    
+    /* 
      <h2>Lista de elementos</h2>
     <ul>
       {elementos.map((e) =>
@@ -48,7 +52,7 @@ return (
      {/*  <ComponenteA/>
       <Cart/> */}
      
-   {  <BrowserRouter>
+   {  {/* <BrowserRouter>
    <ShoppingCartContext>
        <Navbar />
     
@@ -64,7 +68,7 @@ return (
     
     </ShoppingCartContext>
     
-</BrowserRouter> } 
+</BrowserRouter> */} } 
 
 </>
 )
