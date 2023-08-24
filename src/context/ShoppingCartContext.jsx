@@ -8,13 +8,12 @@ const [cart, setCart] = useState([])
 
 const longitud = cart.length
 
-console.log(longitud);
 
-const comision = "React en Coderhouse"
+
     
     return(
      <CartContext.Provider value={{cart,
-      setCart, comision, longitud}}>
+      setCart, longitud}}>
        
         {children}
      

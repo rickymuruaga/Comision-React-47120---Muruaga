@@ -38,7 +38,7 @@ const handleSubmit=(e)=>{
         />
         <button type="submit">Enviar info</button>
      </form>
-    <p>Numero de orden: {orderId}</p>
+        <p>Numero de orden: {orderId}</p>
     </div>
   )
 }

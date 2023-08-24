@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Item = ({nombre, description, id, category}) => {
  
-  console.log(nombre);
+  
  
   return (
     <>

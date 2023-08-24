@@ -3,8 +3,8 @@ import { CartContext } from "../context/ShoppingCartContext"
 
 const ComponenteA = () => {
   
-  const {cart, setCart, comision, longitud}
-  =useContext(CartContext)
+  const {cart, setCart, comision, longitud}=
+  useContext(CartContext)
 
   return (
     <div>
