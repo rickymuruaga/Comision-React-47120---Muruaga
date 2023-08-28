@@ -47,9 +47,9 @@ import { doc, getDoc, getFirestore} from 'firebase/firestore'
       <h1>Producto</h1>
       {
         <div>
-            <h3>producto: {product.nombre}</h3>
-            <h4>categoria: {product.category}</h4>
-            <p>Precio: {product.precio}</p>
+            <h3>producto: {productos.nombre}</h3>
+            <h4>categoria: {productos.category}</h4>
+            <p>Precio: {productos.precio}</p>
         </div>
 
       }

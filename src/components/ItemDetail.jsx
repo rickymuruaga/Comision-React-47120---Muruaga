@@ -26,7 +26,7 @@ import {Card,CardHeader, CardBody,CardFooter, Heading, Text, Button, Center } fr
 
                    <CardFooter>
                      <Button>
-                       Details
+                       Comprar
                      </Button>
                    </CardFooter>
                  </Card>

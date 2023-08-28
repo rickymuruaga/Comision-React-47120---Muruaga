@@ -8,8 +8,8 @@ import Cart from './components/Cart'
 import About from './components/About'
 import ProductDetail from './components/ProductDetail'
 import ShoppingCartContext from "./context/ShoppingCartContext"
-import ComponenteA from './components/ComponenteA'
-import ShoppingCartProvider from './context/ShoppingCartContext'
+
+
 
 
 
@@ -19,11 +19,16 @@ const App = () => {
 
 return (
   <>
-  <ShoppingCartProvider>
+  <ShoppingCartContext>
+
+  <Cart/>
+  </ShoppingCartContext>
+
+  
+  
   <BrowserRouter>
   
-    <ComponenteA/>
-    {/* <Cart/> */}
+
   
     <Navbar />
  
@@ -37,7 +42,7 @@ return (
   
    </Routes>
  </BrowserRouter> 
- </ShoppingCartProvider>
+
 
 </>
 )
