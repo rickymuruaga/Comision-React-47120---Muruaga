@@ -9,6 +9,7 @@ import About from './components/About'
 import ProductDetail from './components/ProductDetail'
 import ShoppingCartContext from "./context/ShoppingCartContext"
 import ComponenteA from './components/ComponenteA'
+import ShoppingCartProvider from './context/ShoppingCartContext'
 
 
 
@@ -18,11 +19,12 @@ const App = () => {
 
 return (
   <>
+  <ShoppingCartProvider>
   <BrowserRouter>
-  <ShoppingCartContext>
+  
     <ComponenteA/>
     {/* <Cart/> */}
-  </ShoppingCartContext>
+  
     <Navbar />
  
   <Routes> 
@@ -35,7 +37,7 @@ return (
   
    </Routes>
  </BrowserRouter> 
-
+ </ShoppingCartProvider>
 
 </>
 )
